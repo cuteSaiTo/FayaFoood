@@ -16,5 +16,44 @@ namespace FayaFoodUPN
         {
 
         }
+
+        private void txtuser_Enter(object sender, EventArgs e)
+        {
+            if (txtuser.Text == "USUARIO")
+            {
+                txtuser.Text = "";
+            }
+        }
+
+        private void txtuser_Leave(object sender, EventArgs e)
+        {
+            if (txtuser.Text == "")
+            {
+                txtuser.Text = "USUARIO";
+            }
+        }
+
+        private void txtpass_Enter(object sender, EventArgs e)
+        {
+            if (txtpass.Text == "CONTRASEÑA")
+            {
+                txtpass.Text = "";
+                txtpass.UseSystemPasswordChar = true;
+            }
+        }
+
+        private void txtpass_Leave(object sender, EventArgs e)
+        {
+            if (txtpass.Text == "")
+            {
+                txtpass.Text = "CONTRASEÑA";
+                txtpass.UseSystemPasswordChar = false;
+            }
+        }
+
+        private void btnlogin_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

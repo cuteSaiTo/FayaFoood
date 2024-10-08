@@ -49,13 +49,14 @@
             // 
             panel1.BackColor = Color.FromArgb(224, 224, 224);
             panel1.BackgroundImage = (Image)resources.GetObject("panel1.BackgroundImage");
+            panel1.BackgroundImageLayout = ImageLayout.Stretch;
             panel1.Controls.Add(label4);
             panel1.Controls.Add(label3);
             panel1.Dock = DockStyle.Left;
             panel1.ForeColor = Color.Gainsboro;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(391, 500);
+            panel1.Size = new Size(391, 580);
             panel1.TabIndex = 6;
             // 
             // label4
@@ -63,8 +64,8 @@
             label4.AutoSize = true;
             label4.BackColor = Color.Transparent;
             label4.Font = new Font("Showcard Gothic", 28.2F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            label4.ForeColor = Color.Maroon;
-            label4.Location = new Point(45, 288);
+            label4.ForeColor = Color.Orange;
+            label4.Location = new Point(59, 251);
             label4.Name = "label4";
             label4.Size = new Size(244, 47);
             label4.TabIndex = 1;
@@ -75,8 +76,8 @@
             label3.AutoSize = true;
             label3.BackColor = Color.Transparent;
             label3.Font = new Font("Showcard Gothic", 28.2F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            label3.ForeColor = Color.Peru;
-            label3.Location = new Point(105, 224);
+            label3.ForeColor = Color.Red;
+            label3.Location = new Point(103, 202);
             label3.Name = "label3";
             label3.Size = new Size(158, 47);
             label3.TabIndex = 0;
@@ -85,14 +86,16 @@
             // panel2
             // 
             panel2.BackColor = SystemColors.ActiveCaptionText;
+            panel2.BackgroundImageLayout = ImageLayout.Zoom;
             panel2.Controls.Add(btnlogin);
             panel2.Controls.Add(label1);
             panel2.Controls.Add(txtpass);
             panel2.Controls.Add(txtuser);
             panel2.Controls.Add(label2);
-            panel2.Location = new Point(392, 1);
+            panel2.Dock = DockStyle.Fill;
+            panel2.Location = new Point(391, 0);
             panel2.Name = "panel2";
-            panel2.Size = new Size(555, 499);
+            panel2.Size = new Size(700, 580);
             panel2.TabIndex = 7;
             // 
             // btnlogin
@@ -101,12 +104,13 @@
             btnlogin.FlatAppearance.MouseDownBackColor = Color.FromArgb(28, 28, 28);
             btnlogin.FlatAppearance.MouseOverBackColor = Color.FromArgb(64, 64, 64);
             btnlogin.FlatStyle = FlatStyle.Flat;
-            btnlogin.Location = new Point(168, 366);
+            btnlogin.Location = new Point(206, 365);
             btnlogin.Name = "btnlogin";
             btnlogin.Size = new Size(276, 60);
             btnlogin.TabIndex = 8;
             btnlogin.Text = "INGRESAR";
             btnlogin.UseVisualStyleBackColor = false;
+            btnlogin.Click += btnlogin_Click;
             // 
             // label1
             // 
@@ -125,12 +129,14 @@
             txtpass.BorderStyle = BorderStyle.None;
             txtpass.Font = new Font("Century Schoolbook", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtpass.ForeColor = SystemColors.InactiveBorder;
-            txtpass.Location = new Point(86, 266);
+            txtpass.Location = new Point(124, 267);
             txtpass.Name = "txtpass";
             txtpass.Size = new Size(424, 29);
             txtpass.TabIndex = 7;
             txtpass.Text = "CONTRASEÑA";
             txtpass.TextAlign = HorizontalAlignment.Center;
+            txtpass.Enter += txtpass_Enter;
+            txtpass.Leave += txtpass_Leave;
             // 
             // txtuser
             // 
@@ -138,12 +144,14 @@
             txtuser.BorderStyle = BorderStyle.None;
             txtuser.Font = new Font("Century Schoolbook", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtuser.ForeColor = SystemColors.InactiveBorder;
-            txtuser.Location = new Point(86, 188);
+            txtuser.Location = new Point(124, 189);
             txtuser.Name = "txtuser";
             txtuser.Size = new Size(424, 29);
             txtuser.TabIndex = 5;
             txtuser.Text = "USUARIO";
             txtuser.TextAlign = HorizontalAlignment.Center;
+            txtuser.Enter += txtuser_Enter;
+            txtuser.Leave += txtuser_Leave;
             // 
             // label2
             // 
@@ -157,7 +165,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(949, 500);
+            ClientSize = new Size(1091, 580);
             Controls.Add(panel2);
             Controls.Add(panel1);
             Margin = new Padding(3, 2, 3, 2);
