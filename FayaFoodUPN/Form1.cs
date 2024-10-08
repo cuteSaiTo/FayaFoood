@@ -11,5 +11,10 @@ namespace FayaFoodUPN
         {
 
         }
+
+        private void PanelLogo_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
