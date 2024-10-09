@@ -16,5 +16,31 @@ namespace FayaFoodUPN
         {
             InitializeComponent();
         }
+
+        private void btnInicio_Click(object sender, EventArgs e)
+        {
+            inicio form2 = new inicio();
+            form2.Show();
+            this.Hide();
+        }
+
+        private void btnMenu_Click(object sender, EventArgs e)
+        {
+            menu form3 = new menu();
+            form3.Show();
+            this.Hide();
+        }
+
+        private void btnCesta_Click(object sender, EventArgs e)
+        {
+            Carrito form4 = new Carrito();
+            form4.Show();
+            this.Hide();
+        }
+
+        private void btnPedidos_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -32,10 +32,10 @@
             label2 = new Label();
             label3 = new Label();
             panel1 = new Panel();
-            label6 = new Label();
-            iconButton1 = new FontAwesome.Sharp.IconButton();
-            label5 = new Label();
-            label1 = new Label();
+            btnPedidos = new Label();
+            btnCesta = new FontAwesome.Sharp.IconButton();
+            btnMenu = new Label();
+            btnInicio = new Label();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -44,10 +44,10 @@
             label2.AutoSize = true;
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Times New Roman", 18F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            label2.Location = new Point(53, 159);
-            label2.Margin = new Padding(6, 0, 6, 0);
+            label2.Location = new Point(46, 119);
+            label2.Margin = new Padding(5, 0, 5, 0);
             label2.Name = "label2";
-            label2.Size = new Size(434, 210);
+            label2.Size = new Size(353, 162);
             label2.TabIndex = 2;
             label2.Text = "En                     \r\ntransformamos la manera en\r\nque recibes tus productos favoritos\r\nNuestra misión es ofrecerte una \r\nexperiencia de entrega rápida\r\nconfiable y sin complicaciones";
             label2.TextAlign = ContentAlignment.MiddleCenter;
@@ -58,9 +58,9 @@
             label3.BackColor = Color.Transparent;
             label3.Font = new Font("Showcard Gothic", 19.8000011F, FontStyle.Italic, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.Peru;
-            label3.Location = new Point(219, 150);
+            label3.Location = new Point(192, 112);
             label3.Name = "label3";
-            label3.Size = new Size(145, 43);
+            label3.Size = new Size(115, 33);
             label3.TabIndex = 4;
             label3.Text = "F.A.Y.A.";
             // 
@@ -68,73 +68,80 @@
             // 
             panel1.BackColor = Color.Transparent;
             panel1.BorderStyle = BorderStyle.FixedSingle;
-            panel1.Controls.Add(label6);
-            panel1.Controls.Add(iconButton1);
-            panel1.Controls.Add(label5);
-            panel1.Controls.Add(label1);
+            panel1.Controls.Add(btnPedidos);
+            panel1.Controls.Add(btnCesta);
+            panel1.Controls.Add(btnMenu);
+            panel1.Controls.Add(btnInicio);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
+            panel1.Margin = new Padding(3, 2, 3, 2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1186, 62);
+            panel1.Size = new Size(1038, 47);
             panel1.TabIndex = 5;
             // 
-            // label6
+            // btnPedidos
             // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Sylfaen", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.ForeColor = Color.White;
-            label6.Location = new Point(1046, 21);
-            label6.Name = "label6";
-            label6.Size = new Size(113, 26);
-            label6.TabIndex = 6;
-            label6.Text = "H. pedidos";
+            btnPedidos.AutoSize = true;
+            btnPedidos.Font = new Font("Sylfaen", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnPedidos.ForeColor = Color.White;
+            btnPedidos.Location = new Point(915, 16);
+            btnPedidos.Name = "btnPedidos";
+            btnPedidos.Size = new Size(90, 22);
+            btnPedidos.TabIndex = 6;
+            btnPedidos.Text = "H. pedidos";
+            btnPedidos.Click += btnPedidos_Click;
             // 
-            // iconButton1
+            // btnCesta
             // 
-            iconButton1.BackColor = Color.Sienna;
-            iconButton1.ForeColor = Color.Transparent;
-            iconButton1.IconChar = FontAwesome.Sharp.IconChar.ShoppingBasket;
-            iconButton1.IconColor = Color.White;
-            iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton1.Location = new Point(974, 12);
-            iconButton1.Name = "iconButton1";
-            iconButton1.Size = new Size(49, 47);
-            iconButton1.TabIndex = 4;
-            iconButton1.UseVisualStyleBackColor = false;
+            btnCesta.BackColor = Color.Sienna;
+            btnCesta.ForeColor = Color.Transparent;
+            btnCesta.IconChar = FontAwesome.Sharp.IconChar.ShoppingBasket;
+            btnCesta.IconColor = Color.White;
+            btnCesta.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btnCesta.Location = new Point(852, 9);
+            btnCesta.Margin = new Padding(3, 2, 3, 2);
+            btnCesta.Name = "btnCesta";
+            btnCesta.Size = new Size(43, 35);
+            btnCesta.TabIndex = 4;
+            btnCesta.UseVisualStyleBackColor = false;
+            btnCesta.Click += btnCesta_Click;
             // 
-            // label5
+            // btnMenu
             // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Sylfaen", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.ForeColor = Color.White;
-            label5.Location = new Point(884, 21);
-            label5.Name = "label5";
-            label5.Size = new Size(67, 26);
-            label5.TabIndex = 5;
-            label5.Text = "menú";
+            btnMenu.AutoSize = true;
+            btnMenu.Font = new Font("Sylfaen", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnMenu.ForeColor = Color.White;
+            btnMenu.Location = new Point(774, 16);
+            btnMenu.Name = "btnMenu";
+            btnMenu.Size = new Size(50, 22);
+            btnMenu.TabIndex = 5;
+            btnMenu.Text = "menú";
+            btnMenu.Click += btnMenu_Click;
             // 
-            // label1
+            // btnInicio
             // 
-            label1.AutoSize = true;
-            label1.BackColor = Color.Transparent;
-            label1.Font = new Font("Showcard Gothic", 13.8F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.Peru;
-            label1.Location = new Point(39, 21);
-            label1.Name = "label1";
-            label1.Size = new Size(98, 29);
-            label1.TabIndex = 1;
-            label1.Text = "F.A.Y.A.";
+            btnInicio.AutoSize = true;
+            btnInicio.BackColor = Color.Transparent;
+            btnInicio.Font = new Font("Showcard Gothic", 13.8F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            btnInicio.ForeColor = Color.Peru;
+            btnInicio.Location = new Point(34, 16);
+            btnInicio.Name = "btnInicio";
+            btnInicio.Size = new Size(81, 23);
+            btnInicio.TabIndex = 1;
+            btnInicio.Text = "F.A.Y.A.";
+            btnInicio.Click += btnInicio_Click;
             // 
             // inicio
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1186, 631);
+            ClientSize = new Size(1038, 473);
             Controls.Add(panel1);
             Controls.Add(label3);
             Controls.Add(label2);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "inicio";
             Text = "Inicio";
             panel1.ResumeLayout(false);
@@ -148,9 +155,9 @@
         private Label label2;
         private Label label3;
         private Panel panel1;
-        private Label label6;
-        private FontAwesome.Sharp.IconButton iconButton1;
-        private Label label5;
-        private Label label1;
+        private Label btnPedidos;
+        private FontAwesome.Sharp.IconButton btnCesta;
+        private Label btnMenu;
+        private Label btnInicio;
     }
 }
