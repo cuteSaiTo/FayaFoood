@@ -58,7 +58,7 @@ namespace FayaFoodUPN
 
             if (username == "Admin" && password == "alexander")
             {
-                Inicio form2 = new Inicio();
+                inicio form2 = new inicio();
                 form2.Show();
                 this.Hide();
             }

@@ -1,6 +1,6 @@
 ﻿namespace FayaFoodUPN
 {
-    partial class inicio
+    partial class menu
     {
         /// <summary>
         /// Required designer variable.
@@ -28,9 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(inicio));
-            label2 = new Label();
-            label3 = new Label();
+            components = new System.ComponentModel.Container();
+            notifyIcon1 = new NotifyIcon(components);
             panel1 = new Panel();
             label6 = new Label();
             iconButton1 = new FontAwesome.Sharp.IconButton();
@@ -39,30 +38,10 @@
             panel1.SuspendLayout();
             SuspendLayout();
             // 
-            // label2
+            // notifyIcon1
             // 
-            label2.AutoSize = true;
-            label2.BackColor = Color.Transparent;
-            label2.Font = new Font("Times New Roman", 18F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            label2.Location = new Point(53, 159);
-            label2.Margin = new Padding(6, 0, 6, 0);
-            label2.Name = "label2";
-            label2.Size = new Size(434, 210);
-            label2.TabIndex = 2;
-            label2.Text = "En                     \r\ntransformamos la manera en\r\nque recibes tus productos favoritos\r\nNuestra misión es ofrecerte una \r\nexperiencia de entrega rápida\r\nconfiable y sin complicaciones";
-            label2.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.BackColor = Color.Transparent;
-            label3.Font = new Font("Showcard Gothic", 19.8000011F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            label3.ForeColor = Color.Peru;
-            label3.Location = new Point(219, 150);
-            label3.Name = "label3";
-            label3.Size = new Size(145, 43);
-            label3.TabIndex = 4;
-            label3.Text = "F.A.Y.A.";
+            notifyIcon1.Text = "notifyIcon1";
+            notifyIcon1.Visible = true;
             // 
             // panel1
             // 
@@ -75,14 +54,14 @@
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1186, 62);
-            panel1.TabIndex = 5;
+            panel1.Size = new Size(1204, 62);
+            panel1.TabIndex = 6;
             // 
             // label6
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Sylfaen", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.ForeColor = Color.White;
+            label6.ForeColor = Color.Black;
             label6.Location = new Point(1046, 21);
             label6.Name = "label6";
             label6.Size = new Size(113, 26);
@@ -91,10 +70,10 @@
             // 
             // iconButton1
             // 
-            iconButton1.BackColor = Color.Sienna;
+            iconButton1.BackColor = Color.White;
             iconButton1.ForeColor = Color.Transparent;
             iconButton1.IconChar = FontAwesome.Sharp.IconChar.ShoppingBasket;
-            iconButton1.IconColor = Color.White;
+            iconButton1.IconColor = Color.Black;
             iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             iconButton1.Location = new Point(974, 12);
             iconButton1.Name = "iconButton1";
@@ -106,7 +85,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Sylfaen", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.ForeColor = Color.White;
+            label5.ForeColor = Color.Black;
             label5.Location = new Point(884, 21);
             label5.Name = "label5";
             label5.Size = new Size(67, 26);
@@ -125,28 +104,24 @@
             label1.TabIndex = 1;
             label1.Text = "F.A.Y.A.";
             // 
-            // inicio
+            // menu
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackColor = Color.White;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1186, 631);
+            ClientSize = new Size(1204, 678);
             Controls.Add(panel1);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Name = "inicio";
-            Text = "Inicio";
+            FormBorderStyle = FormBorderStyle.None;
+            Name = "menu";
+            Text = "Form1";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
-
-        private Label label2;
-        private Label label3;
+        private NotifyIcon notifyIcon1;
         private Panel panel1;
         private Label label6;
         private FontAwesome.Sharp.IconButton iconButton1;

@@ -55,8 +55,9 @@
             panel1.Dock = DockStyle.Left;
             panel1.ForeColor = Color.Gainsboro;
             panel1.Location = new Point(0, 0);
+            panel1.Margin = new Padding(3, 4, 3, 4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(391, 580);
+            panel1.Size = new Size(447, 773);
             panel1.TabIndex = 6;
             // 
             // label4
@@ -64,10 +65,10 @@
             label4.AutoSize = true;
             label4.BackColor = Color.Transparent;
             label4.Font = new Font("Showcard Gothic", 28.2F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            label4.ForeColor = Color.Orange;
-            label4.Location = new Point(59, 251);
+            label4.ForeColor = Color.Maroon;
+            label4.Location = new Point(67, 335);
             label4.Name = "label4";
-            label4.Size = new Size(244, 47);
+            label4.Size = new Size(302, 59);
             label4.TabIndex = 1;
             label4.Text = "Delivery´s";
             // 
@@ -76,10 +77,10 @@
             label3.AutoSize = true;
             label3.BackColor = Color.Transparent;
             label3.Font = new Font("Showcard Gothic", 28.2F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            label3.ForeColor = Color.Red;
-            label3.Location = new Point(103, 202);
+            label3.ForeColor = Color.Peru;
+            label3.Location = new Point(118, 269);
             label3.Name = "label3";
-            label3.Size = new Size(158, 47);
+            label3.Size = new Size(198, 59);
             label3.TabIndex = 0;
             label3.Text = "F.A.Y.A.";
             // 
@@ -93,9 +94,10 @@
             panel2.Controls.Add(txtuser);
             panel2.Controls.Add(label2);
             panel2.Dock = DockStyle.Fill;
-            panel2.Location = new Point(391, 0);
+            panel2.Location = new Point(447, 0);
+            panel2.Margin = new Padding(3, 4, 3, 4);
             panel2.Name = "panel2";
-            panel2.Size = new Size(700, 580);
+            panel2.Size = new Size(800, 773);
             panel2.TabIndex = 7;
             // 
             // btnlogin
@@ -104,9 +106,10 @@
             btnlogin.FlatAppearance.MouseDownBackColor = Color.FromArgb(28, 28, 28);
             btnlogin.FlatAppearance.MouseOverBackColor = Color.FromArgb(64, 64, 64);
             btnlogin.FlatStyle = FlatStyle.Flat;
-            btnlogin.Location = new Point(206, 365);
+            btnlogin.Location = new Point(235, 487);
+            btnlogin.Margin = new Padding(3, 4, 3, 4);
             btnlogin.Name = "btnlogin";
-            btnlogin.Size = new Size(276, 60);
+            btnlogin.Size = new Size(315, 80);
             btnlogin.TabIndex = 8;
             btnlogin.Text = "INGRESAR";
             btnlogin.UseVisualStyleBackColor = false;
@@ -117,9 +120,9 @@
             label1.AutoSize = true;
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Showcard Gothic", 25.8000011F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(195, 49);
+            label1.Location = new Point(223, 65);
             label1.Name = "label1";
-            label1.Size = new Size(223, 44);
+            label1.Size = new Size(276, 54);
             label1.TabIndex = 4;
             label1.Text = "bienvenido";
             // 
@@ -129,9 +132,10 @@
             txtpass.BorderStyle = BorderStyle.None;
             txtpass.Font = new Font("Century Schoolbook", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtpass.ForeColor = SystemColors.InactiveBorder;
-            txtpass.Location = new Point(124, 267);
+            txtpass.Location = new Point(142, 356);
+            txtpass.Margin = new Padding(3, 4, 3, 4);
             txtpass.Name = "txtpass";
-            txtpass.Size = new Size(424, 29);
+            txtpass.Size = new Size(485, 37);
             txtpass.TabIndex = 7;
             txtpass.Text = "CONTRASEÑA";
             txtpass.TextAlign = HorizontalAlignment.Center;
@@ -144,9 +148,10 @@
             txtuser.BorderStyle = BorderStyle.None;
             txtuser.Font = new Font("Century Schoolbook", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtuser.ForeColor = SystemColors.InactiveBorder;
-            txtuser.Location = new Point(124, 189);
+            txtuser.Location = new Point(142, 252);
+            txtuser.Margin = new Padding(3, 4, 3, 4);
             txtuser.Name = "txtuser";
-            txtuser.Size = new Size(424, 29);
+            txtuser.Size = new Size(485, 37);
             txtuser.TabIndex = 5;
             txtuser.Text = "USUARIO";
             txtuser.TextAlign = HorizontalAlignment.Center;
@@ -156,20 +161,19 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(181, 234);
+            label2.Location = new Point(207, 312);
             label2.Name = "label2";
-            label2.Size = new Size(0, 15);
+            label2.Size = new Size(0, 20);
             label2.TabIndex = 6;
             // 
-            // Form1
+            // Login
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1091, 580);
+            ClientSize = new Size(1247, 773);
             Controls.Add(panel2);
             Controls.Add(panel1);
-            Margin = new Padding(3, 2, 3, 2);
-            Name = "Form1";
+            Name = "Login";
             Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)bindingSource1).EndInit();
             panel1.ResumeLayout(false);
