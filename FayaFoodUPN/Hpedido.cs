@@ -10,18 +10,11 @@ using System.Windows.Forms;
 
 namespace FayaFoodUPN
 {
-    public partial class menu : Form
+    public partial class Hpedido : Form
     {
-        public menu()
+        public Hpedido()
         {
             InitializeComponent();
-        }
-
-        private void btnInicio_Click(object sender, EventArgs e)
-        {
-            inicio form2 = new inicio();
-            form2.Show();
-            this.Hide();
         }
     }
 }
