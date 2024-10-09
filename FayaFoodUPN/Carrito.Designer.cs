@@ -29,10 +29,12 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
-            label6 = new Label();
+            btnPedidos = new Label();
             iconButton1 = new FontAwesome.Sharp.IconButton();
             label5 = new Label();
             btnInicio = new Label();
+            label1 = new Label();
+            listBox1 = new ListBox();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -40,7 +42,7 @@
             // 
             panel1.BackColor = Color.Transparent;
             panel1.BorderStyle = BorderStyle.FixedSingle;
-            panel1.Controls.Add(label6);
+            panel1.Controls.Add(btnPedidos);
             panel1.Controls.Add(iconButton1);
             panel1.Controls.Add(label5);
             panel1.Controls.Add(btnInicio);
@@ -50,16 +52,17 @@
             panel1.Size = new Size(1187, 62);
             panel1.TabIndex = 7;
             // 
-            // label6
+            // btnPedidos
             // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Sylfaen", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.ForeColor = Color.Black;
-            label6.Location = new Point(1046, 21);
-            label6.Name = "label6";
-            label6.Size = new Size(113, 26);
-            label6.TabIndex = 6;
-            label6.Text = "H. pedidos";
+            btnPedidos.AutoSize = true;
+            btnPedidos.Font = new Font("Sylfaen", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnPedidos.ForeColor = Color.Black;
+            btnPedidos.Location = new Point(1046, 21);
+            btnPedidos.Name = "btnPedidos";
+            btnPedidos.Size = new Size(113, 26);
+            btnPedidos.TabIndex = 6;
+            btnPedidos.Text = "H. pedidos";
+            btnPedidos.Click += btnPedidos_Click;
             // 
             // iconButton1
             // 
@@ -97,17 +100,42 @@
             btnInicio.TabIndex = 1;
             btnInicio.Text = "F.A.Y.A.";
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Showcard Gothic", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Location = new Point(40, 114);
+            label1.Name = "label1";
+            label1.Size = new Size(313, 35);
+            label1.TabIndex = 8;
+            label1.Text = "CARRITO DE COMPRAS";
+            // 
+            // listBox1
+            // 
+            listBox1.Font = new Font("Segoe UI Symbol", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            listBox1.FormattingEnabled = true;
+            listBox1.ItemHeight = 28;
+            listBox1.Items.AddRange(new object[] { " producto                        precio                      cantidad                    sub total", " _________________________________________________________________________________", "", "BK STACKER                   S/23.90                            2                          S/47.80", "doble junior", "__________________________________________________________________________________", "", "PIZZA DOBLE", "O NADA                         S/72.90                            1                          S/72.90", "FAMILIAR", "___________________________________________________________________________________", "", "MEGA BOX                    S/115.00                          1                          S/115.00" });
+            listBox1.Location = new Point(40, 193);
+            listBox1.Name = "listBox1";
+            listBox1.Size = new Size(1008, 396);
+            listBox1.TabIndex = 11;
+            // 
             // Carrito
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.White;
             ClientSize = new Size(1187, 630);
+            Controls.Add(listBox1);
+            Controls.Add(label1);
             Controls.Add(panel1);
             Name = "Carrito";
             Text = "Carrito";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -117,5 +145,9 @@
         private FontAwesome.Sharp.IconButton iconButton1;
         private Label label5;
         private Label btnInicio;
+        private Label label1;
+        private ListBox listBox1;
+        private Label Hpedidos;
+        private Label btnPedidos;
     }
 }
