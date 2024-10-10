@@ -28,11 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Hpedido));
             panel1 = new Panel();
             label6 = new Label();
             iconButton1 = new FontAwesome.Sharp.IconButton();
             label5 = new Label();
             btnInicio = new Label();
+            listBox1 = new ListBox();
+            label1 = new Label();
+            label2 = new Label();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -97,17 +101,53 @@
             btnInicio.TabIndex = 1;
             btnInicio.Text = "F.A.Y.A.";
             // 
+            // listBox1
+            // 
+            listBox1.BorderStyle = BorderStyle.None;
+            listBox1.FormattingEnabled = true;
+            listBox1.Items.AddRange(new object[] { "________________________________________________________________________________________________________________________________________________", "PEDIDO                                                                                        FECHA                                                      PRECIO                    ESTADO", "_________________________________________________________________________________________________________________________________________________", "", "Bk Stacker Doble Junior                                                Lunes 2 Septiembre, 2024                                     S/23.90                     Pagado", "", "", "Pizza Doble o Nada Familiar                                        Lunes 2 Septiembre, 2024                                     S/72.90                     Pagado", "", "", "Mega Box                                                                      Lunes 2 Septiembre, 2024                                     S/115.00                   Pagado", " " });
+            listBox1.Location = new Point(52, 122);
+            listBox1.Name = "listBox1";
+            listBox1.Size = new Size(984, 280);
+            listBox1.TabIndex = 8;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(130, 82);
+            label1.Name = "label1";
+            label1.Size = new Size(0, 20);
+            label1.TabIndex = 9;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Showcard Gothic", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.Location = new Point(52, 82);
+            label2.Name = "label2";
+            label2.Size = new Size(356, 37);
+            label2.TabIndex = 10;
+            label2.Text = "Historial de Pedidos";
+            // 
             // Hpedido
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.White;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1187, 630);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            Controls.Add(listBox1);
             Controls.Add(panel1);
             Name = "Hpedido";
             Text = "Hpedido";
+            Load += Hpedido_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -117,5 +157,8 @@
         private FontAwesome.Sharp.IconButton iconButton1;
         private Label label5;
         private Label btnInicio;
+        private ListBox listBox1;
+        private Label label1;
+        private Label label2;
     }
 }

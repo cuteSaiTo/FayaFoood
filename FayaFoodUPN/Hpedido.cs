@@ -16,5 +16,10 @@ namespace FayaFoodUPN
         {
             InitializeComponent();
         }
+
+        private void Hpedido_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -26,7 +26,7 @@ namespace FayaFoodUPN
 
         private void btnMenu_Click(object sender, EventArgs e)
         {
-            menu form3 = new menu();
+            Menu form3 = new Menu();
             form3.Show();
             this.Hide();
         }
