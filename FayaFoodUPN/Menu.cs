@@ -12,7 +12,7 @@ namespace FayaFoodUPN
 {
     public partial class menu : Form
     {
-        public menu()
+        public  menu()
         {
             InitializeComponent();
         }

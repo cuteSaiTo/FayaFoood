@@ -6,8 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
-
+using System.Windows.Forms; 
 namespace FayaFoodUPN
 {
     public partial class inicio : Form
@@ -26,7 +25,7 @@ namespace FayaFoodUPN
 
         private void btnMenu_Click(object sender, EventArgs e)
         {
-            Menu form3 = new Menu();
+            menu form3 = new menu();
             form3.Show();
             this.Hide();
         }
